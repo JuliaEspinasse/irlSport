@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  background-color: var(--bgOne);
+  background-color: var(--bgTwo);
   color: var(--bgThree);
   padding: 10px;
   text-align: center;
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: var(--fontTwo);
+  color: var(--fontThree);
 }
 
 nav ul {
@@ -49,11 +49,11 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  min-height: 70vh;
+  min-height: 73vh;
 }
 
 footer {
-  background-color: var(--bgOne);
+  background-color: var(--bgTwo);
   color: var(--bgThree);
   text-align: center;
   padding: 10px;
