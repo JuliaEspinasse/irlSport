@@ -167,3 +167,12 @@ color: var(--bgTwo);
 #EventPlace{
 margin-right: 33%;
 }
+
+span {
+  opacity:0;
+  transition: all 0.4 ease;
+}
+
+span.fade {
+  opacity: 1;
+}
