@@ -14,13 +14,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bgOne);
-  min-height: 100vh;
 }
 
 header {
   background-color: var(--bgTwo);
   color: var(--bgThree);
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -70,14 +69,54 @@ img {
   padding-top: 118px;
 }
 
+#photo {
+  background-color: var(--bgThree);
+  text-align: center;
+}
+
+#photo img {
+  width: 100%;
+}
+
+section#logoNav {
+  background: var(--bgThree);
+  text-align: center;
+}
+
+#logoNav img {
+  width: 50%;
+}
+
+iframe {
+  margin-bottom: 64px;
+}
+
+#evenements li {
+  margin: 10px 0;
+  background: var(--bgThree);
+  border: 2px solid var(--fontTwo);
+  color: var(--fontTwo);
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
 footer {
   background-color: var(--bgTwo);
   color: var(--bgThree);
   text-align: center;
-  padding: 9px;
+  padding: 9px 0;
   position: fixed;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
+}
+
+#logo {
+  width: 80px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Styles spécifiques */
@@ -89,26 +128,19 @@ footer {
   height: auto; /* Hauteur automatique pour maintenir la proportion de l'image */ 
 }
 
-form {
-  background: rgb(255, 255, 255);
-  margin: 5%;
-  margin-top: 50%;
-  padding: 1rem;
-  height: 320px;
-  border-radius: 20px;
-  border-left: 1px solid var(--fontThree);
-  border-top: 1px solid var(--fontThree);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-  text-align: center;
+section#formConnexion {
+  padding: 20px;
+  height: 50vh;
 }
 
-form p {
-  color: var(--bgTwo);
-  font-weight: 500;
-  opacity: .7;
-  font-size: 1.4rem;
-  margin-bottom: 60px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+form {
+  color: var(--fontOne);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
   
 a {
@@ -125,20 +157,14 @@ a:active {
   text-shadow: none;
 }
 
-input {
-  text-transform: uppercases;
-  background: transparent;
-  border: 1px solid;
-  /* border: none;
-  border-left: 1px solid rgba(7, 7, 7, 0.7);
-  border-top: 1px solid rgba(8, 8, 8, 0.7); */
-  padding: 1rem;
-  width: 200px;
-  border-radius: 50px;
-  color: rgb(56, 52, 52);
-  font-weight: 500;
-  transition: all .3s;
-  margin-bottom: 2em;
+#evenements li {
+    margin: 7px 20px;
+    background: var(--bgThree);
+    border: 2px solid var(--fontTwo);
+    color: var(--fontTwo);
+    border-radius: 15px;
+    padding: 6px;
+    cursor: pointer;
 }
 
 input:hover,
@@ -162,10 +188,6 @@ font-size: larger;
 }
 .labelSelectSport{
 color: var(--bgTwo);
-}
-
-#EventPlace{
-margin-right: 33%;
 }
 
 span {
