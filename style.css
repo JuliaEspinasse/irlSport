@@ -1,4 +1,4 @@
-:root{
+:root {
   --bgOne: #242424;
   --bgBis: #444C4F;
   --bgTwo: #800000;
@@ -19,7 +19,7 @@ body {
 header {
   background-color: var(--bgTwo);
   color: var(--bgThree);
-  padding: 10px 0;
+  padding: 0px 0 10px 0;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -47,6 +47,10 @@ nav ul li {
   margin-right: 20px;
 }
 
+h1 {
+  margin: 20px;
+}
+
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -66,7 +70,7 @@ ul {
 
 img {
   width: 100%;
-  padding-top: 118px;
+  padding-top: 100px;
 }
 
 #photo {
@@ -124,13 +128,22 @@ footer {
 /* Page Connection */
 
 .logoIrlSport {
-  width: 100px; /* Largeur de la miniature */
-  height: auto; /* Hauteur automatique pour maintenir la proportion de l'image */ 
+  width: 100px;
+  /* Largeur de la miniature */
+  height: auto;
+  /* Hauteur automatique pour maintenir la proportion de l'image */
 }
 
 section#formConnexion {
   padding: 20px;
   height: 50vh;
+}
+
+section#formCreer {
+  display: flex;
+  height: 55vh;
+  justify-content: center;
+  flex-direction: column;
 }
 
 form {
@@ -142,7 +155,16 @@ form {
   justify-content: space-evenly;
   height: 100%;
 }
-  
+
+input,
+select {
+  padding: 10px;
+  border-radius: 25px;
+  width: 80%;
+  color: var(--fontTwo);
+  background: var(--bgThree) !important;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -158,43 +180,42 @@ a:active {
 }
 
 #evenements li {
-    margin: 7px 20px;
-    background: var(--bgThree);
-    border: 2px solid var(--fontTwo);
-    color: var(--fontTwo);
-    border-radius: 15px;
-    padding: 6px;
-    cursor: pointer;
+  margin: 7px 30px;
+  background: var(--bgThree);
+  border: 2px solid var(--fontTwo);
+  color: var(--fontTwo);
+  border-radius: 15px;
+  padding: 6px;
+  cursor: pointer;
 }
 
 input:hover,
 input[type="email"]:focus,
-input[type="password"]:focus{
-background: rgba(255,255,255,0.7);
-
+input[type="password"]:focus {
+  background: rgba(255, 255, 255, 0.7);
 }
-  
+
 input[type="button"] {
-color: var(--bgTwo);
-margin-top: 10px;
-width: 150px;
-font-size: 1rem;
-cursor: pointer;
+  color: var(--bgTwo);
+  width: 50%;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 ::placeholder {
-color: var(--bgTwo);
-font-size: larger;
-}
-.labelSelectSport{
-color: var(--bgTwo);
+  color: var(--bgTwo);
+  font-size: larger;
 }
 
 span {
-  opacity:0;
+  opacity: 0;
   transition: all 0.4 ease;
 }
 
 span.fade {
   opacity: 1;
+}
+
+label {
+  margin-bottom: -10px;
 }

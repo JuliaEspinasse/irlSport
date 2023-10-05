@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1 class="fancy">IRL SPORT</h1>
+    <h1 class="fancy">Ajout Evenement</h1>
     <!-- <h1><img id="logo" src="img/logo_irl_sport_2.PNG" alt=""></h1> -->
     <nav>
       <ul>
@@ -21,22 +21,29 @@
       </ul>
     </nav>
   </header>
-  <div class="container">
+  <section id="logoNav">
+    <img src="../img/IRL_sports2.PNG" alt="photo">
+  </section>
+  <section id="formCreer">
     <!-- <img src="../img/logoIRLsport.png" alt="logoIRLsport" class="logoIrlSport" style="height: 75px;"> -->
     <form>
       <!-- <p>Créer un Événement sportif</p> -->
-      <input id="EventPlace" type="EventPlace" placeholder="Lieux de l'Événement"><br>
-      <label class="labelSelectSport" for="choixSport">Sélectionnez un sport :</label>
+      <input type="name" placeholder="Nom">
+      <input type="date" placeholder="date">
+      <input type="number" placeholder="nombre de joueurs">
+      <input id="EventPlace" type="EventPlace" placeholder="Lieux de l'Événement">
+      <label class="labelSelectSport" for="choixSport">Sport :</label>
       <select id="choixSport">
         <option value="Football">Football</option>
         <option value="Basket">Basket</option>
         <option value="Tennis">Tennis</option>
         <option value="Paddle">Paddle</option>
         <option value="Course">Course à pied</option>
-        <option value="Autre">RAutre</option>
+        <option value="Autre">Autre</option>
       </select>
+      <input type="button" value="Creer">
     </form>
-  </div>
+  </section>
   <footer>
     <p>&copy; 2023 Créations Événement Sport</p>
   </footer>
